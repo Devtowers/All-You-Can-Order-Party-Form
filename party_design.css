@@ -1,0 +1,325 @@
+#bg_color{
+  background-color: #fffbed;
+}
+
+#logo{
+  position: static;
+  border: 2px solid black;
+  background: #fff7d6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:30px;
+  width: 55%;
+  margin: 0 auto;
+  border-radius: 6px;
+  border: 10px solid #2f701c;
+  height: auto;
+  overflow: hidden;
+}
+
+#green{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#introduction{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-weight: bolder;
+  width: 70%;
+}
+#box{
+	position: static;
+	border: 3px solid black;
+	background: #fff7d6;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  padding-top:20 px;
+  padding-left:30px;
+  padding-right:30px;
+  padding-bottom:30px;
+	width: 55%;
+	margin: 0 auto;
+	border-radius: 6px;
+	border: 10px solid #2f701c;
+	height: auto;
+	overflow: hidden;
+
+}
+
+.size_legend{
+	font-size: 25px;
+	color: #2f701c;
+	font-weight: bolder;
+}
+
+#customer{
+	text-align:center ;
+	width: 60%;
+	height: auto;
+	display: block;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 45px;
+  padding-left: 75px;
+  padding-right: 75px;
+  border: 5px solid #2f701c;
+}
+
+input[target="data"]{
+	width: 60%;
+	height:30px;
+}
+
+input[target="num_peo"]{
+	width: 60%;
+	height:30px;
+}
+
+#details{
+	text-align:center ;
+	width: 90%;
+  min-width: 750px;
+	height: auto;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: 5px solid #2f701c;
+
+}
+
+#appetizer_section
+	{
+	position: relative;
+  width: 90%;
+	max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 5px solid black;
+  overflow: hidden;
+  /*padding: 10px 60px 10px 60px;*/
+
+}
+
+#appetizer_text
+{
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.card_appet{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: #fffbed;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 40%;
+  height: auto;
+}
+
+.card_appet:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container_appet {
+  padding: 2px 16px;
+  margin: 0 auto;
+}
+
+/*Main Dishes*/
+
+#maindish_section
+  {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  justify-content: center;
+  min-height: 300px;
+  align-items: center;
+  border: 5px solid black;
+  overflow: hidden;
+}
+
+#main_dish_text
+{
+  text-transform: uppercase;
+  text-align: left;
+
+}
+
+.card_main {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  height: auto;
+  background-color: #fffbed;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card_main:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container_main {
+  padding: 2px 16px;
+  margin: 0 auto;
+}
+
+/*Desert Section*/
+
+#desert_section
+  {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 300px;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  border: 5px solid black;
+  overflow: hidden;
+}
+
+#desert_text
+{
+  text-transform: uppercase;
+  text-align: left;
+
+}
+.card_desert {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    height: auto;
+    background-color: #fffbed;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card_desert:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container_desert {
+  padding: 2px 16px;
+  margin: 0 auto;
+}
+
+/*Rice Section*/
+#rice_section
+  {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 5px solid black;
+  overflow: hidden;
+}
+
+#rice_text
+{
+  text-transform: uppercase;
+  text-align: left;
+
+}
+
+.card_rice {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  height: auto;
+  background-color: #fffbed;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card_rice:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container_rice {
+  padding: 2px 16px;
+  margin: 0 auto;
+}
+
+/*Drinks Section*/
+
+#drink_section
+  {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 5px solid black;
+  overflow: hidden;
+}
+
+#drink_text
+{
+  text-transform: uppercase;
+  text-align: left;
+
+}
+.card_drink {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 30%;
+  height: auto;
+  background-color: #fffbed;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card_drink:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container_drink {
+  padding: 2px 16px;
+  margin: 0 auto;
+}
+
+
+#delivery{
+  text-align:center ;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: 5px solid #2f701c;
+}

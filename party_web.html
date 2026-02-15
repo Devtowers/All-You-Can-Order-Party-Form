@@ -1,0 +1,310 @@
+<!-- This HTML page is for setting up a party with details. Also designed using CSS and have script for other mechanics -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> ALL YOU CAN PARTY Order Form </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="party_design.css">
+</head>
+
+<body id="bg_color">
+	<div id=logo>
+		<img src= greenlogo.jpg id="green" >
+	</div>
+	<br>
+	<div id="box">
+		<div id="introduction">
+			<h6>To help you craft your best party ever, please share us some details  about your event by filling up the form below. thank you!</h6>
+		</div>
+	<form id="form" onsubmit="order()"> <!--added onsubmit for the required attribute of HTML to run before the script run-->
+		<fieldset id="customer"> 
+			<legend class="size_legend">Customer Information</legend>
+			<input type="text" name="user_name" placeholder="Name" target="data" required>
+			<br>
+			<br>
+			<input type="tel" name="m_number" placeholder=" Mobile number-09XXXXXXXXXXX" pattern="[0-9]{11}" target="data" required>
+			<br>
+			<br>
+			<input type="email" name="em_add" placeholder="Email Address" target="data" required>
+			<br>
+			<br>
+		</fieldset>
+			<br>
+		<fieldset id="details">
+			<legend class="size_legend">Party Details</legend>
+			<br>
+			<input type="number" name="num_people" placeholder="Number of People"id="people" target="num-peo" min="10" required> <!--added a min attribute for the restriction-->
+			<p>Minimum of 10 people</p>
+		<div id="appetizer_text">
+				<p>Appetizer(Select one)<p>
+		</div>
+		<div id="appetizer_section">
+				<div class="card_appet">
+						<input type="radio" name="appetizer" id="salad_appet" value="Salad" checked>
+						<label for="salad_appet">
+						<div class="container_appet">
+							Salad - 100
+						</div>
+						</label>
+				</div>
+				<div class="card_appet">
+						<input type="radio" name="appetizer" id="bread_appet" value="Bread w/Dip">
+						<label for="bread_appet">
+						<div class="container_appet">
+							Bread w/Dip - 70
+						</div>
+						</label>
+				</div>
+				<div class="card_appet">
+						<input type="radio" name="appetizer" id="tomato_appet" value="Tomato Surprise">
+						<label for="tomato_appet">
+						<div class="container_appet">
+							Tomato Surprise - 120
+						</div>
+						</label>
+				</div>
+				<div class="card_appet">
+						<input type="radio" name="appetizer" id="mush_appet" value="Mushroom Bites">
+						<label for="mush_appet">
+						<div class="container_appet">
+							Mushroom Bites - 150
+						</div>
+						</label>
+				</div>
+		</div>
+		<br>
+		<div id="main_dish_text">
+			<p>Main Dish(Select all that applies)<p>
+		</div>
+		<div id="maindish_section">
+			<div class="card_main">
+					<input type="checkbox" name="main" id="beef_main" value="Roast Beef">
+					<label for="beef_main">
+					<div class="container_main">
+						Roast Beef - 300
+					</div>
+					</label>
+			</div>
+			<div class="card_main">
+					<input type="checkbox" name="main" id="steak_main" value="Beef Steak">
+					<label for="steak_main">
+					<div class="container_main">
+						Beef Steak - 270
+					</div>
+					</label>
+			</div>
+			<div class="card_main">
+					<input type="checkbox" name="main" id="ribs_main" value="Pork Spareribs">
+					<label for="ribs_main">
+					<div class="container_main">
+						Pork Spareribs - 240
+					</div>
+					</label>
+			</div>
+			<div class="card_main">
+					<input type="checkbox" name="main" id="marbella_main" value="Pork Marbella">
+					<label for="marbella_main">
+					<div class="container_main">
+						Pork Marbella - 250
+					</div>
+					</label>
+			</div>
+			<div class="card_main">
+					<input type="checkbox" name="main" id="grilled_main" value="Grilled Chicken">
+					<label for="grilled_main">
+					<div class="container_main">
+						Grilled Chicken - 190
+					</div>
+					</label>
+			</div>
+			<div class="card_main">
+					<input type="checkbox" name="main" id="roast_main" value="Roast Chicken">
+					<label for="roast_main">
+					<div class="container_main">
+						Roast Chicken - 190
+					</div>
+					</label>
+			</div>
+			<div class="card_main">
+					<input type="checkbox" name="main" id="broiled_main" value="Broiled Salmon">
+					<label for="broiled_main">
+					<div class="container_main">
+						Broiled Salmon - 170
+					</div>
+					</label>
+			</div>
+			<div class="card_main">
+					<input type="checkbox" name="main" id="grilled_salmon_main" value="Grilled Salmon">
+					<label for="grilled_salmon_main">
+					<div class="container_main">
+						Grilled Salmon - 180
+					</div>
+					</label>
+			</div>
+		</div>
+		<br>
+		<div id="desert_text">
+			<p>Desert(Select all that applies)<p>
+		</div>
+		<div id="desert_section">
+			<div class="card_desert">
+					<input type="checkbox" name="desert" id="molten_desert" value="Molten Chocolate Cake">
+					<label for="molten_desert">
+					<div class="container_desert">
+						Molten Chocolate <br>
+						Cake - 120
+					</div>
+					</label>
+			</div>
+			<div class="card_desert">
+					<input type="checkbox" name="desert" id="red_velvet_desert" value="Red Velvet Cake">
+					<label for="red_velvet_desert">
+					<div class="container_desert">
+						Red Velvet Cake - 90
+					</div>
+					</label>
+			</div>
+			<div class="card_desert">
+					<input type="checkbox" name="desert" id="lemon_desert" value="Lemon Bars">
+					<label for="lemon_desert">
+					<div class="container_desert">
+						Lemon Bars - 50
+					</div>
+					</label>
+			</div>
+			<div class="card_desert">
+					<input type="checkbox" name="desert" id="peanut_desert" value="Peanut Butter Bars">
+					<label for="peanut_desert">
+					<div class="container_desert">
+						Peanut Butter Bars - 60
+					</div>
+					</label>
+			</div>
+			<div class="card_desert">
+					<input type="checkbox" name="desert" id="buko_desert" value="Buko Pie">
+					<label for="buko_desert">
+					<div class="container_desert">
+						Buko Pie - 50
+					</div>
+					</label>
+			</div>
+			<div class="card_desert">
+					<input type="checkbox" name="desert" id="meringue_desert" value="Lemon Meringue Pie">
+					<label for="meringue_desert">
+					<div class="container_desert">
+						Lemon Meringue Pie - 70
+					</div>
+					</label>
+			</div>
+		</div>
+		<br>
+		<div id="rice_text">
+			<p>Rice(Select one)<p>
+		</div>
+		<div id="rice_section">
+			<div class="card_rice">
+					<input type="radio" name="rice" id="plain_rice" value="Plain" checked>
+					<label for="plain_rice">
+					<div class="container_rice">
+						Plain - 30
+					</div>
+					</label>
+			</div>
+			<div class="card_rice">
+					<input type="radio" name="rice" id="garlic_rice" value="Garlic">
+					<label for="garlic_rice">
+					<div class="container_rice">
+						Garlic - 40
+					</div>
+					</label>
+			</div>
+			<div class="card_rice">
+					<input type="radio" name="rice" id="bagoong_rice" value="Bagoong">
+					<label for="bagoong_rice">
+					<div class="container_rice">
+						Bagoong - 35
+					</div>
+					</label>
+			</div>
+		</div>
+		<br>
+		<div id="drink_text">
+			<p>Drinks(Select all that applies)<p>
+		</div>
+		<div id="drink_section">
+			<div class="card_drink">
+					<input type="radio" name="drink" id="cucumber_drink" value="Cucumber Lemonade" checked>
+					<label for="cucumber_drink">
+					<div class="container_drink">
+						Cucumber 
+						<br>Lemonade - 60
+					</div>
+					</label>
+			</div>
+			<div class="card_drink">
+				<input type="radio" name="drink" id="tea_drink" value="Red Iced Tea">
+					<label for="tea_drink">
+					<div class="container_drink">
+						Red Iced Tea - 50
+					</div>
+					</label>
+			</div>
+			<div class="card_drink">
+					<input type="radio" name="drink" id="mango_drink" value="Ripe Mango Juice">
+					<label for="mango_drink">
+					<div class="container_drink">
+						Ripe Mango Juice - 70
+					</div>
+					</label>
+			</div>
+		</div>
+		<br>
+		<br>
+		</fieldset>
+		<br>
+		<fieldset id="delivery">
+			<legend class="size_legend">Delivery Details</legend>
+			
+			<p>Customer will avail of</p>
+
+			<input type="radio" name="del_opt" id="pick_opt" value="Store Pickup" onclick = "delivery_options()" checked>
+				<label for="pick_opt"> <!--added an onclick to determine if it is checked or not-->
+					Store Pickup
+				</label>
+			<input type="radio" name="del_opt" id="deliver_opt" value="Delivery" onclick = "delivery_options()">
+				<label for="deliver_opt">
+					Delivery
+				</label>
+				<br><br>
+
+
+			<textarea name="delivery_details" id="details_delivery" rows="8" cols="80" required>Address here...</textarea>
+			<br>
+
+			<label for="date_party">Party Date</label>
+			<input type="date" name="party_date" id="date_party" oninput="date()" required>
+			<p id="temp_date"></p> <!--added an oninput to validate if the inputted date and time are correct-->
+			<br>
+
+			<label for="time_party">Party Time</label>
+			<input type="time" name="party_time" id="time_party" oninput="time()"required>
+			<p id="temp2"></p>
+
+		</fieldset>
+		<br>
+		<div class="button">
+		<button id="submit" type="submit">Submit</button>
+		<br>
+		<br>
+		<button type="reset">Reset</button>
+		</div>
+	</form>
+	</div>
+	<script src= "party_script.js"></script>
+	<script type="text/javascript"> 
+		document.getElementById("form").addEventListener("submit", function(event){event.preventDefault();});
+	</script>
+</body>
+</html>
+	
